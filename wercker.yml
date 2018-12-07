@@ -1,0 +1,14 @@
+box: alpine
+
+build:
+  steps:
+    - script:
+      name: Hello
+      code: |
+        echo "Hello Buddy the Elf!"
+pipeline2:
+  steps:
+    - script:
+      name: step2
+      code: |
+        echo "Hello pipeline 2!"
